@@ -40,30 +40,6 @@ Terminal User Interface (TUI) transit telemetry radar for public buses in Semara
 
 ---
 
-## Mathematical Implementation
-
-### 1. Haversine Distance
-
-The spherical surface distance $d$ between the fleet coordinates $(\phi_1, \lambda_1)$ and the target stop $(\phi_2, \lambda_2)$ is derived as:
-
-$$\Delta\phi = \phi_2 - \phi_1, \quad \Delta\lambda = \lambda_2 - \lambda_1$$
-
-$$a = \sin^2\left(\frac{\Delta\phi}{2}\right) + \cos(\phi_1)\cos(\phi_2)\sin^2\left(\frac{\Delta\lambda}{2}\right)$$
-
-$$c = 2 \cdot \operatorname{atan2}\left(\sqrt{a}, \sqrt{1 - a}\right)$$
-
-$$d = R \cdot c$$
-
-*Where $R = 6371.0\text{ km}$ represents the mean radius of Earth.*
-
-### 2. Physical Estimated Time of Arrival (ETA)
-
-$$\text{ETA} = \frac{d}{v_{\text{eff}}} \times 60 \quad [\text{minutes}]$$
-
-*Where $v_{\text{eff}} = \max(v_{\text{fleet}}, 5.0\text{ km/h})$ to prevent division by zero during stationary states at traffic signals or stops.*
-
----
-
 ## Sample Output
 
 ### 1. Terminal Selection Menu
