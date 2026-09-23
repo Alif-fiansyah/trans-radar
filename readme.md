@@ -24,8 +24,8 @@ Terminal User Interface (TUI) transit telemetry radar for public buses in Semara
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/Alif-fiansyah/udinus-netpulse.git](https://github.com/Alif-fiansyah/udinus-netpulse.git)
-   cd udinus-netpulse
+   git clone [https://github.com/Alif-fiansyah/trans-radar.git](https://github.com/Alif-fiansyah/trans-radar.git)
+   cd trans-radar
    ```
 
 2. **Run the script (Requires Python 3.8+):**
