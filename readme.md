@@ -33,7 +33,7 @@ Terminal User Interface (TUI) transit telemetry radar for public buses in Semara
    python3 radar.py
    ```
 
-3. 3. **Controls:**
+3. **Controls:**
    - Select the target transit hub/stop by entering its corresponding numeric index.
    - Press `q` inside the radar dashboard to gracefully exit back to your shell prompt.
 
